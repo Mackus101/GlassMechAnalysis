@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 pandas = "*"
 reliability = "*"
+matplotlib = "*"
+seaborn = "*"
+numpy = "*"
 
 [dev-packages]
 ipykernel = "*"
