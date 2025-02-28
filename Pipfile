@@ -9,6 +9,7 @@ reliability = "*"
 matplotlib = "*"
 seaborn = "*"
 numpy = "*"
+openpyxl = "*"
 
 [dev-packages]
 ipykernel = "*"
