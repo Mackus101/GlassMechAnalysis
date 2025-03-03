@@ -42,7 +42,7 @@ class RunStiffSelector:
         print("Stiffness data loaded with %d samples" % len(self.data))
 
         self.fig, (self.ax_top, self.ax_bot) = plt.subplots(2, figsize = (8, 6))
-        self.ax_top.set_title("Welcome to the stiffness selector, press enter to begin")
+        self.fig.suptitle("Welcome to the stiffness selector, press enter to begin")
 
         self.fig.canvas.mpl_connect('key_press_event', self.on_press)
 
@@ -57,7 +57,7 @@ class RunStiffSelector:
         self.ax_bot.cla()
         self.span.set_visible(False)
         if not self.data:
-            self.ax_top.set_title("Curve fitting complete, shutting down")
+            self.fig.suptitle("Curve fitting complete, shutting down")
             self.fig.canvas.draw_idle()
             plt.pause(5)
             sys.exit(0)
@@ -68,7 +68,7 @@ class RunStiffSelector:
         self.current_y = df["Force"].to_numpy()
 
         self.ax_top.plot(self.current_x, self.current_y)
-        self.ax_top.set_title("Sample: %s" % sample_name)
+        self.fig.suptitle("Sample: %s" % sample_name)
         self.fig.canvas.draw_idle()
 
     def on_press(self, event):
