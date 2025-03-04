@@ -17,8 +17,16 @@ translate = {"Prüfzeit" : "Test_time",
 
 row_skip = [2,3]
 
+## Figure Formatting
+
 output_prefix = "Stiffness\\Rod_stiffness_"
 output_suffix = ".csv"
+
+figure_prefix = "Stiff_Figs\\Stiff_line_"
+figure_suffix = ".png"
+
+y_title = "Force (N)"
+x_title = "Deflection (mm)"
 
 class RunStiffSelector:
     def __init__(self, filename, translate, row_skip):
@@ -75,6 +83,15 @@ class RunStiffSelector:
             }
             new_row = pd.DataFrame(row_format)
             self.output = pd.concat([self.output, new_row], ignore_index=True)
+
+            fig_filename = figure_prefix + self.current_name + figure_suffix
+
+            fig, ax = plt.subplots(1)
+            ax.plot("Deformation", "Force", data=self.current_data)
+            ax.plot(self.fit_region_x, self.reg.intercept + self.reg.slope * self.fit_region_x, "r")
+            
+            fig.savefig(fig_filename)
+            plt.close(fig)
         except AttributeError:
             pass
 
@@ -85,18 +102,20 @@ class RunStiffSelector:
         if not self.data:
             self.fig.suptitle("Curve fitting complete, shutting down")
             self.fig.canvas.draw_idle()
-            plt.pause(5)
-            plt.close()
+            plt.pause(3)
+            plt.close("all")
             return
 
-        sample_name, df = self.data.popitem()
+        self.current_name, self.current_data = self.data.popitem()
+
+
+        df = self.current_data.iloc[0:self.current_data["Force"].idxmax(), :]
         
-        self.current_name = sample_name
         self.current_x = df["Deformation"].to_numpy()
         self.current_y = df["Force"].to_numpy()
 
         self.ax_top.plot(self.current_x, self.current_y)
-        self.fig.suptitle("Sample: %s" % sample_name)
+        self.fig.suptitle("Sample: %s" % self.current_name)
         self.fig.canvas.draw_idle()
 
     def on_press(self, event):
