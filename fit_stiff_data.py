@@ -48,7 +48,7 @@ class RunStiffSelector:
 
         self.NUM_SAMPLES = len(self.data)
 
-        print("Stiffness data loaded with %d samples" % self.NUM_SAMPLES)
+        print("Stiffness data loaded with %d samples\n" % self.NUM_SAMPLES)
 
         self.fig, (self.ax_top, self.ax_bot) = plt.subplots(2, figsize = (8, 6))
         self.fig.suptitle("Welcome to the stiffness selector, press enter to begin")
@@ -87,6 +87,7 @@ class RunStiffSelector:
             self.fig.canvas.draw_idle()
             plt.pause(5)
             plt.close()
+            return
 
         sample_name, df = self.data.popitem()
         
@@ -101,7 +102,10 @@ class RunStiffSelector:
     def on_press(self, event):
         sys.stdout.flush()
         if event.key == "enter":
-            self.update_plot()
+            if self.span.get_visible():
+                self.update_plot()
+            else:
+                print("No curve selected, please select part of curve before moving on")
         elif event.key == "escape":
             self.ax_bot.cla()
             self.fig.canvas.draw_idle()
@@ -133,7 +137,7 @@ class RunStiffSelector:
             self.fig.canvas.draw_idle()
 
     def on_close(self, event):
-        print("Figure closed with %d out of %d curves fitted\n" % (len(self.output.index), self.NUM_SAMPLES))
+        print("\nFigure closed with %d out of %d curves fitted!\n" % (len(self.output.index), self.NUM_SAMPLES))
         self.save_and_exit()
 
     def save_and_exit(self):
