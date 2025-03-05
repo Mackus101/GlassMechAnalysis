@@ -19,14 +19,19 @@ row_skip = [2,3]
 
 ## Figure Formatting
 
-output_prefix = "Stiffness\\Rod_stiffness_"
-output_suffix = ".csv"
+output_file_fmt = "Stiffness\\Rod_stiffness_{}.csv"
 
-figure_prefix = "Stiff_Figs\\Stiff_line_"
-figure_suffix = ".png"
+figure_file_fmt= "Stiff_Figs\\Stiff_line_{}.png"
 
-y_title = "Force (N)"
-x_title = "Deflection (mm)"
+top_y_title = "Force (N)"
+top_x_title = "Deflection (mm)"
+
+bot_y_title = "Selected Force (N)"
+bot_x_title = "Selected Deflection (mm)"
+
+
+suptitle_fmt = "Sample: {}"
+curve_stats_fmt = "Slope = {:.2f}\t Intercept = {:.2f}\t $r^{{2}}$ = {:.2f}"
 
 class RunStiffSelector:
     def __init__(self, filename, translate, row_skip):
@@ -36,8 +41,7 @@ class RunStiffSelector:
 
         self.output = pd.DataFrame()
 
-        time_str = time.strftime("%Y%m%d-%H%M")
-        self.OUTPUT_FILENAME = output_prefix + time_str + output_suffix
+        self.OUTPUT_FILENAME = output_file_fmt.format(time.strftime("%Y%m%d-%H%M"))
 
         self.current_x = np.empty(0)
         self.current_y = np.empty(0)
@@ -60,6 +64,7 @@ class RunStiffSelector:
 
         self.fig, (self.ax_top, self.ax_bot) = plt.subplots(2, figsize = (8, 6))
         self.fig.suptitle("Welcome to the stiffness selector, press enter to begin")
+        self.fig.tight_layout()
 
         self.fig.canvas.mpl_connect('key_press_event', self.on_press)
         self.fig.canvas.mpl_connect('close_event', self.on_close)
@@ -84,13 +89,15 @@ class RunStiffSelector:
             new_row = pd.DataFrame(row_format)
             self.output = pd.concat([self.output, new_row], ignore_index=True)
 
-            fig_filename = figure_prefix + self.current_name + figure_suffix
-
             fig, ax = plt.subplots(1)
             ax.plot("Deformation", "Force", data=self.current_data)
-            ax.plot(self.fit_region_x, self.reg.intercept + self.reg.slope * self.fit_region_x, "r")
+            ax.plot(self.fit_region_x, self.reg.intercept + self.reg.slope * self.fit_region_x, "--r")
             
-            fig.savefig(fig_filename)
+            fig.suptitle(suptitle_fmt.format(self.current_name))
+            ax.set_title(curve_stats_fmt.format(self.reg.slope, self.reg.intercept, self.reg.rvalue**2))
+            ax.set_ylabel(top_y_title)
+            ax.set_xlabel(top_x_title)
+            fig.savefig(figure_file_fmt.format(self.current_name))
             plt.close(fig)
         except AttributeError:
             pass
@@ -115,7 +122,15 @@ class RunStiffSelector:
         self.current_y = df["Force"].to_numpy()
 
         self.ax_top.plot(self.current_x, self.current_y)
-        self.fig.suptitle("Sample: %s" % self.current_name)
+
+        self.fig.suptitle(suptitle_fmt.format(self.current_name))
+        self.ax_top.set_title(curve_stats_fmt.format(np.nan, np.nan, np.nan))
+        self.ax_top.set_ylabel(top_y_title)
+        self.ax_top.set_xlabel(top_x_title)
+        self.ax_bot.set_ylabel(bot_y_title)
+        self.ax_bot.set_xlabel(bot_x_title)
+
+        self.fig.tight_layout()
         self.fig.canvas.draw_idle()
 
     def on_press(self, event):
@@ -146,13 +161,22 @@ class RunStiffSelector:
             self.ax_top.cla()
 
             self.ax_top.plot(self.current_x, self.current_y)
-            self.ax_top.plot(self.fit_region_x, self.reg.intercept + self.reg.slope * self.fit_region_x, "r")
+            self.ax_top.plot(self.fit_region_x, self.reg.intercept + self.reg.slope * self.fit_region_x, "--r")
+
 
             self.ax_bot.scatter(self.fit_region_x, self.fit_region_y, marker='.')
-            self.ax_bot.plot(self.fit_region_x, self.reg.intercept + self.reg.slope * self.fit_region_x, "r")
+            self.ax_bot.plot(self.fit_region_x, self.reg.intercept + self.reg.slope * self.fit_region_x, "--r")
 
             self.ax_bot.set_xlim(self.fit_region_x[0], self.fit_region_x[-1])
             self.ax_bot.set_ylim(self.fit_region_y.min(), self.fit_region_y.max())
+
+            self.ax_top.set_title(curve_stats_fmt.format(self.reg.slope, self.reg.intercept, self.reg.rvalue**2))
+
+            self.ax_top.set_ylabel(top_y_title)
+            self.ax_top.set_xlabel(top_x_title)
+            self.ax_bot.set_ylabel(bot_y_title)
+            self.ax_bot.set_xlabel(bot_x_title)
+
             self.fig.canvas.draw_idle()
 
     def on_close(self, event):
