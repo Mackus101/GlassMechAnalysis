@@ -9,11 +9,11 @@ from scipy import stats
 from matplotlib.widgets import SpanSelector
 from matplotlib.widgets import Button
 
-filename = "4 Punkt Biegeversuch-Stab_4.xlsx"
+filename = "Collated Filament Test Data.xlsx"
 
 translate = {"Prüfzeit" : "Test_time",
              "Standardkraft" : "Force",
-             "Verformung": "Deformation"}
+             "Standardweg": "Deformation"}
 
 row_skip = [2,3]
 
