@@ -11,9 +11,9 @@ from matplotlib.widgets import Button
 
 filename = "Collated Filament Test Data.xlsx"
 
-translate = {"Prüfzeit" : "Test_time",
-             "Standardkraft" : "Force",
-             "Standardweg": "Deformation"}
+translate = {"Prüfzeit" : "test_time",
+             "Standardkraft" : "force",
+             "Standardweg": "deformation"}
 
 row_skip = [2,3]
 
@@ -78,19 +78,19 @@ class RunStiffSelector:
     def update_plot(self):
         try:
             row_format = {
-                "Sample"                    :[self.current_name],
-                "Stiff_slope"               :[self.reg.slope],
-                "Stiff_intercept"           :[self.reg.intercept],
-                "Stiff_rvalue"              :[self.reg.rvalue],
-                "Stiff_rsquared"            :[self.reg.rvalue**2],
-                "Stiff_stderr"              :[self.reg.stderr],
-                "Stiff_intercept_stderr"    :[self.reg.intercept_stderr]
+                "sample"                    :[self.current_name],
+                "stiff_slope"               :[self.reg.slope],
+                "stiff_intercept"           :[self.reg.intercept],
+                "stiff_rvalue"              :[self.reg.rvalue],
+                "stiff_rsquared"            :[self.reg.rvalue**2],
+                "stiff_stderr"              :[self.reg.stderr],
+                "stiff_intercept_stderr"    :[self.reg.intercept_stderr]
             }
             new_row = pd.DataFrame(row_format)
             self.output = pd.concat([self.output, new_row], ignore_index=True)
 
             fig, ax = plt.subplots(1)
-            ax.plot("Deformation", "Force", data=self.current_data)
+            ax.plot("deformation", "force", data=self.current_data)
             ax.plot(self.fit_region_x, self.reg.intercept + self.reg.slope * self.fit_region_x, "--r")
             
             fig.suptitle(suptitle_fmt.format(self.current_name))
@@ -116,10 +116,10 @@ class RunStiffSelector:
         self.current_name, self.current_data = self.data.popitem()
 
 
-        df = self.current_data.iloc[0:self.current_data["Force"].idxmax(), :]
+        df = self.current_data.iloc[0:self.current_data["force"].idxmax(), :]
         
-        self.current_x = df["Deformation"].to_numpy()
-        self.current_y = df["Force"].to_numpy()
+        self.current_x = df["deformation"].to_numpy()
+        self.current_y = df["force"].to_numpy()
 
         self.ax_top.plot(self.current_x, self.current_y)
 
