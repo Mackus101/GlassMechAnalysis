@@ -1,0 +1,135 @@
+paper_ID,material,test_procedure,mean_fracture_stress,median_fracture_stress,SD_fracture_stress,CV_fracture_stress,weibull_fracture_stress,weibull_modulus,mean_young_mod,length,width,thickness,sample_shape,sample_size,URL,Notes
+1,soda-lime,3pt bend,105.50,,3.50,,,,,9,,4.50,semi-circle,5,https://doi.org/10.1016/j.engfracmech.2022.108417,Length is diameter
+1,soda-lime,3pt bend,93.40,,3.00,,,,,13.5,,4.50,semi-circle,5,https://doi.org/10.1016/j.engfracmech.2022.108417,Length is diameter
+1,soda-lime,3pt bend,83.80,,6.80,,,,,18,,4.50,semi-circle,5,https://doi.org/10.1016/j.engfracmech.2022.108417,Length is diameter
+2,float,4pt bend,79.80,,,12.6,,,,250,60,6.00,float rectangle,48,https://doi.org/10.1007/s40940-024-00251-6,air side
+2,float,4pt bend,66.70,,,22.7,,,,250,60,6.00,float rectangle,48,https://doi.org/10.1007/s40940-024-00251-6,tin side
+2,float,4pt bend,51.30,,,17.8,,,,300,60,8.00,float rectangle,40,https://doi.org/10.1007/s40940-024-00251-6,air side
+2,float,4pt bend,48.50,,,15.9,,,,300,60,8.00,float rectangle,40,https://doi.org/10.1007/s40940-024-00251-6,tin side
+3,float,ring on ring,156.10,,50.30,32.2,,,,250,250,10.00,float square,20,http://resolver.tudelft.nl/uuid:0d59407b-5feb-412e-97cf-93fb5dcf2a8c,air side
+3,float,ring on ring,117.20,,28.50,24.3,,,,250,250,10.00,float square,20,http://resolver.tudelft.nl/uuid:0d59407b-5feb-412e-97cf-93fb5dcf2a8c,tin side
+3,float,ring on ring,134.50,,41.00,30.5,,,,450,450,10.00,float square,20,http://resolver.tudelft.nl/uuid:0d59407b-5feb-412e-97cf-93fb5dcf2a8c,air side
+3,float,ring on ring,87.10,,15.50,17.8,,,,450,450,10.00,float square,21,http://resolver.tudelft.nl/uuid:0d59407b-5feb-412e-97cf-93fb5dcf2a8c,tin side
+4,float,ring on ring,,98.00,,,,6.6,,280,,3.95,circular disk,400,https://doi.org/10.1016/0022-3093(95)00565-X,"Not sure if ring on ring or something similar, length is diameter"
+4,float,ring on ring,,98.70,,,,6.9,,150,,3.95,circular disk,,https://doi.org/10.1016/0022-3093(95)00565-X,"Not sure if ring on ring or something similar, length is diameter"
+4,float,ring on ring,,106.00,,,,7.5,,100,,3.95,circular disk,,https://doi.org/10.1016/0022-3093(95)00565-X,"Not sure if ring on ring or something similar, length is diameter"
+4,float,ring on ring,,126.00,,,,7.6,,50,,3.95,circular disk,,https://doi.org/10.1016/0022-3093(95)00565-X,"Not sure if ring on ring or something similar, length is diameter"
+4,float,ring on ring,,144.00,,,,7.3,,25,,3.95,circular disk,,https://doi.org/10.1016/0022-3093(95)00565-X,"Not sure if ring on ring or something similar, length is diameter"
+5,soda-lime,3pt bend,105.50,,3.50,,,,,9,,4.50,semi-circle,5,https://doi.org/10.1016/j.conbuildmat.2023.131708,Length is diameter
+5,soda-lime,3pt bend,83.80,,6.80,,,,,18,,4.50,semi-circle,5,https://doi.org/10.1016/j.conbuildmat.2023.131708,Length is diameter
+5,soda-lime,brazilian disk,118.80,,,,,5.42,,9,,4.50,brazillian disk,12,https://doi.org/10.1016/j.conbuildmat.2023.131708,"20 deg. Loading angle, length is diameter"
+5,soda-lime,brazilian disk,84.70,,,,,4.43,,18,,4.50,brazillian disk,18,https://doi.org/10.1016/j.conbuildmat.2023.131708,"20 deg. Loading angle, length is diameter"
+6,float,ring on ring,80.16,,10.65,,,,,400,400,6.00,float square,20,https://doi.org/10.1016/j.engfracmech.2024.109964,annealed
+6,float,ring on ring,235.39,,29.33,,,,,400,400,6.00,float square,20,https://doi.org/10.1016/j.engfracmech.2024.109964,fully tempered
+6,float,ring on ring,90.88,,14.03,,,,,400,400,6.00,float square,20,https://doi.org/10.1016/j.engfracmech.2024.109964,annealed faster load
+6,float,ring on ring,255.28,,42.24,,,,,400,400,6.00,float square,20,https://doi.org/10.1016/j.engfracmech.2024.109964,fully tempered faster load
+7,soda-lime,4pt bend,79.63,,,,,,,250,38,12.00,float rectangle,56,https://doi.org/10.1139/cjce-2016-0374,
+8,soda-lime,3pt bend,102.00,,,6.2,,,,400,,25.00,round bar,10,https://heronjournal.nl/52-12/4.pdf,
+8,soda-lime,3pt bend,50.20,,,41,,,,400,40,2.00,float rectangle,8,https://heronjournal.nl/52-12/4.pdf,manually cut
+8,soda-lime,3pt bend,74.60,,,16.8,,,,400,40,3.00,float rectangle,12,https://heronjournal.nl/52-12/4.pdf,manually cut
+8,soda-lime,3pt bend,62.10,,,37.2,,,,400,40,6.00,float rectangle,10,https://heronjournal.nl/52-12/4.pdf,manually cut
+8,soda-lime,3pt bend,47.70,,,20.2,,,,400,80,8.00,float rectangle,10,https://heronjournal.nl/52-12/4.pdf,manually cut
+8,soda-lime,3pt bend,74.60,,,16.8,,,,400,40,3.00,float rectangle,12,https://heronjournal.nl/52-12/4.pdf,manually cut
+8,soda-lime,3pt bend,60.30,,,11.9,,,,400,40,3.00,float rectangle,12,https://heronjournal.nl/52-12/4.pdf,manually cut and sanded
+8,soda-lime,3pt bend,100.20,,,29.3,,,,400,40,3.00,float rectangle,12,https://heronjournal.nl/52-12/4.pdf,ground out of plate
+8,soda-lime,3pt bend,83.30,,,39.3,,,,400,40,3.00,float rectangle,12,https://heronjournal.nl/52-12/4.pdf,machine cut
+8,soda-lime,3pt bend,65.60,,,21.7,,,,400,40,6.00,float rectangle,30,https://heronjournal.nl/52-12/4.pdf,mixed
+8,soda-lime,3pt bend,100.30,,,32.8,,,,400,40,6.00,float rectangle,30,https://heronjournal.nl/52-12/4.pdf,burr up
+8,soda-lime,3pt bend,49.40,,,12.6,,,,400,40,6.00,float rectangle,30,https://heronjournal.nl/52-12/4.pdf,burr down
+8,soda-lime,3pt bend,82.50,,,8.5,,,,400,40,6.00,float rectangle,30,https://heronjournal.nl/52-12/4.pdf,cut and ground
+8,soda-lime,4pt bend,71.40,,,19.6,,,,600,50,10.00,float rectangle,16,https://heronjournal.nl/52-12/4.pdf,lying
+8,soda-lime,4pt bend,52.40,,,16.1,,,,600,50,10.00,float rectangle,16,https://heronjournal.nl/52-12/4.pdf,standing
+8,soda-lime,4pt bend,71.00,,,20.1,,,,1000,125,10.00,float rectangle,16,https://heronjournal.nl/52-12/4.pdf,lying
+8,soda-lime,4pt bend,43.70,,,11.8,,,,1000,125,10.00,float rectangle,16,https://heronjournal.nl/52-12/4.pdf,standing
+8,soda-lime,4pt bend,51.10,,,35.3,,,,1000,250,10.00,float rectangle,16,https://heronjournal.nl/52-12/4.pdf,lying
+8,soda-lime,4pt bend,39.90,,,24.3,,,,1000,250,10.00,float rectangle,16,https://heronjournal.nl/52-12/4.pdf,standing
+8,soda-lime,4pt bend,53.00,,,16.7,,,,1000,125,10.00,float rectangle,10,https://heronjournal.nl/52-12/4.pdf,standing
+8,soda-lime,4pt bend,52.60,,,11.1,,,,1000,125,10.00,float rectangle,11,https://heronjournal.nl/52-12/4.pdf,standing
+8,soda-lime,4pt bend,50.90,,,22.7,,,,1000,125,10.00,float rectangle,11,https://heronjournal.nl/52-12/4.pdf,standing
+8,soda-lime,3pt bend,81.60,,,17.2,,,,200,20,8.00,float rectangle,24,https://heronjournal.nl/52-12/4.pdf,rotary wheel cut
+8,soda-lime,3pt bend,82.50,,,16.5,,,,200,20,8.00,float rectangle,38,https://heronjournal.nl/52-12/4.pdf,rotary wheel cut
+8,float,3pt bend,80.20,,,14.8,,,,200,20,8.00,float rectangle,39,https://heronjournal.nl/52-12/4.pdf,rotary wheel cut
+8,float,3pt bend,83.00,,,13.5,,,,200,20,8.00,float rectangle,38,https://heronjournal.nl/52-12/4.pdf,rotary wheel cut
+9,soda-lime,4pt bend,64.30,,,13.3,,,68.4,1100,360,12.00,float rectangle,19,https://doi.org/10.1016/j.conbuildmat.2023.131479,annealed
+9,soda-lime,4pt bend,166.30,,,7.9,,,67.7,1100,360,12.00,float rectangle,19,https://doi.org/10.1016/j.conbuildmat.2023.131479,fully tempered
+10,float,ring on ring,216.00,,,21,,,,100,100,4.00,float square,10,https://doi.org/10.7480/cgc.5.2268,
+10,float,ring on ring,143.00,,,36,,,,100,100,5.00,float square,10,https://doi.org/10.7480/cgc.5.2268,
+10,float,ring on ring,134.00,,,24,,,,100,100,6.00,float square,10,https://doi.org/10.7480/cgc.5.2268,
+10,float,ring on ring,140.00,,,27,,,,100,100,8.00,float square,15,https://doi.org/10.7480/cgc.5.2268,
+11,soda-lime,ring on ring,169.00,,40.00,,,,,45,,2.85,circular disk,,https://doi.org/10.1007/s40940-018-0089-2,Length is diameter
+12,soda-lime,sphere compression,,143.00,,,,6.19,,3.68,,,sphere,47,https://doi.org/10.1111/j.1151-2916.1986.tb07447.x,Length is diameter
+12,soda-lime,sphere compression,,157.00,,,,5.96,,3.05,,,sphere,48,https://doi.org/10.1111/j.1151-2916.1986.tb07447.x,Length is diameter
+12,soda-lime,sphere compression,,195.00,,,,5.34,,2.41,,,sphere,53,https://doi.org/10.1111/j.1151-2916.1986.tb07447.x,Length is diameter
+12,soda-lime,sphere compression,,212.00,,,,4.21,,2.03,,,sphere,50,https://doi.org/10.1111/j.1151-2916.1986.tb07447.x,Length is diameter
+12,soda-lime,sphere compression,,229.00,,,,5.46,,1.56,,,sphere,30,https://doi.org/10.1111/j.1151-2916.1986.tb07447.x,Length is diameter
+12,soda-lime,sphere compression,,252.00,,,,5.37,,1.27,,,sphere,45,https://doi.org/10.1111/j.1151-2916.1986.tb07447.x,Length is diameter
+12,soda-lime,sphere compression,,303.00,,,,5.18,,1.08,,,sphere,38,https://doi.org/10.1111/j.1151-2916.1986.tb07447.x,Length is diameter
+12,soda-lime,sphere compression,,407.00,,,,3.72,,0.91,,,sphere,47,https://doi.org/10.1111/j.1151-2916.1986.tb07447.x,Length is diameter
+12,soda-lime,sphere compression,,418.00,,,,4.29,,0.65,,,sphere,52,https://doi.org/10.1111/j.1151-2916.1986.tb07447.x,Length is diameter
+12,soda-lime,sphere compression,,435.00,,,,6.82,,0.51,,,sphere,44,https://doi.org/10.1111/j.1151-2916.1986.tb07447.x,Length is diameter
+13,float,ring on ring,,,,,68.4,5.7,,356,356,12.50,float square,18,https://doi.org/10.1111/j.2041-1294.2010.00014.x,tin side
+13,float,ring on ring,,,,,62,4.1,,305,305,12.00,float square,15,https://doi.org/10.1111/j.2041-1294.2010.00014.x,tin side
+13,float,ring on ring,,,,,92,2.6,,50.8,50.8,3.30,float square,16,https://doi.org/10.1111/j.2041-1294.2010.00014.x,tin side
+13,float,ring on ring,,,,,120,3.4,,24,24,1.50,float square,30,https://doi.org/10.1111/j.2041-1294.2010.00014.x,tin side
+13,float,ring on ring,,,,,96,4.3,,305,305,12.00,float square,7,https://doi.org/10.1111/j.2041-1294.2010.00014.x,air side
+13,float,ring on ring,,,,,131,3.7,,24,24,1.50,float square,24,https://doi.org/10.1111/j.2041-1294.2010.00014.x,air side
+14,float,4pt bend,103.40,,,,,,,300,60,4.00,float rectangle,30,https://doi.org/10.1016/j.engfracmech.2018.05.031,
+14,float,4pt bend,111.20,,,,,,,200,40,4.00,float rectangle,21,https://doi.org/10.1016/j.engfracmech.2018.05.031,
+14,float,4pt bend,145.20,,,,,,,100,20,4.00,float rectangle,20,https://doi.org/10.1016/j.engfracmech.2018.05.031,
+15,soda-lime,4pt bend,,76.00,,,,4.2,,100,10,3.00,float rectangle,50,https://doi.org/10.1016/S0955-2219(99)00087-4,
+16,float,ring on ring,,,,,125,5.6,,76.3,76.3,3.89,float square,50,https://doi.org/10.1111/j.1151-2916.2002.tb00352.x,"tin side, as recieved"
+16,float,ring on ring,,,,,248,3.8,,76.3,76.3,3.89,float square,51,https://doi.org/10.1111/j.1151-2916.2002.tb00352.x,"air side, as received"
+16,float,ring on ring,,,,,114,6.9,,76.3,76.3,3.89,float square,29,https://doi.org/10.1111/j.1151-2916.2002.tb00352.x,"tin side, heat treated"
+16,float,ring on ring,,,,,243,4,,76.3,76.3,3.89,float square,28,https://doi.org/10.1111/j.1151-2916.2002.tb00352.x,"air side, heat treated"
+17,soda-lime,ring on ring,106.20,,,,,,,100,100,5.60,float square,30,https://doi.org/10.1111/ijag.12094,tin side
+17,soda-lime,ring on ring,153.20,,,,,,,100,100,5.60,float square,30,https://doi.org/10.1111/ijag.12094,tin side
+17,soda-lime,ring on ring,114.30,,,,,,,100,100,5.60,float square,4,https://doi.org/10.1111/ijag.12094,air side
+17,soda-lime,ring on ring,180.80,,,,,,,100,100,5.60,float square,15,https://doi.org/10.1111/ijag.12094,air side
+17,soda-lime,ring on ring,93.60,,,,,,,100,100,5.60,float square,6,https://doi.org/10.1111/ijag.12094,tin side
+17,soda-lime,ring on ring,133.80,,,,,,,100,100,5.60,float square,14,https://doi.org/10.1111/ijag.12094,tin side
+17,soda-lime,ring on ring,177.60,,,,,,,100,100,5.60,float square,8,https://doi.org/10.1111/ijag.12094,air side
+17,soda-lime,ring on ring,154.40,,,,,,,125,125,5.60,float square,24,https://doi.org/10.1111/ijag.12094,tin side
+17,soda-lime,ring on ring,185.90,,,,,,,125,125,5.60,float square,25,https://doi.org/10.1111/ijag.12094,tin side
+17,soda-lime,ring on ring,193.80,,,,,,,125,125,5.60,float square,15,https://doi.org/10.1111/ijag.12094,air side
+17,soda-lime,ring on ring,267.00,,,,,,,125,125,5.60,float square,20,https://doi.org/10.1111/ijag.12094,air side
+17,soda-lime,ring on ring,113.20,,,,,,,125,125,5.60,float square,29,https://doi.org/10.1111/ijag.12094,tin side
+17,soda-lime,ring on ring,151.60,,,,,,,125,125,5.60,float square,27,https://doi.org/10.1111/ijag.12094,tin side
+17,soda-lime,ring on ring,141.90,,,,,,,125,125,5.60,float square,23,https://doi.org/10.1111/ijag.12094,air side
+17,soda-lime,ring on ring,189.60,,,,,,,125,125,5.60,float square,24,https://doi.org/10.1111/ijag.12094,air side
+17,soda-lime,ring on ring,150.10,,,,,,,150,150,5.60,float square,18,https://doi.org/10.1111/ijag.12094,tin side
+17,soda-lime,ring on ring,199.40,,,,,,,150,150,5.60,float square,19,https://doi.org/10.1111/ijag.12094,tin side
+17,soda-lime,ring on ring,203.40,,,,,,,150,150,5.60,float square,17,https://doi.org/10.1111/ijag.12094,air side
+17,soda-lime,ring on ring,250.50,,,,,,,150,150,5.60,float square,20,https://doi.org/10.1111/ijag.12094,air side
+17,soda-lime,ring on ring,124.60,,,,,,,150,150,5.60,float square,30,https://doi.org/10.1111/ijag.12094,tin side
+17,soda-lime,ring on ring,166.70,,,,,,,150,150,5.60,float square,28,https://doi.org/10.1111/ijag.12094,tin side
+17,soda-lime,ring on ring,164.00,,,,,,,150,150,5.60,float square,29,https://doi.org/10.1111/ijag.12094,air side
+17,soda-lime,ring on ring,237.50,,,,,,,150,150,5.60,float square,30,https://doi.org/10.1111/ijag.12094,air side
+18,float,ring on ring,187.14,,,27,,,,100,100,4.00,float square,47,https://doi.org/10.1016/j.conbuildmat.2019.07.264,
+18,float,ring on ring,135.73,,,20,,,,100,100,5.00,float square,59,https://doi.org/10.1016/j.conbuildmat.2019.07.264,
+18,float,ring on ring,134.63,,,23,,,,100,100,6.00,float square,54,https://doi.org/10.1016/j.conbuildmat.2019.07.264,
+18,float,ring on ring,121.50,,,26,,,,100,100,8.00,float square,55,https://doi.org/10.1016/j.conbuildmat.2019.07.264,
+18,float,ring on ring,135.41,,,38,,,,400,400,6.00,float square,20,https://doi.org/10.1016/j.conbuildmat.2019.07.264,
+18,float,ring on ring,99.48,,,40,,,,400,400,8.00,float square,21,https://doi.org/10.1016/j.conbuildmat.2019.07.264,
+18,float,ring on ring,87.89,,,27,,,,400,400,10.00,float square,21,https://doi.org/10.1016/j.conbuildmat.2019.07.264,
+18,float,ring on ring,83.85,,,33,,,,400,400,6.00,float square,20,https://doi.org/10.1016/j.conbuildmat.2019.07.264,
+18,float,ring on ring,70.46,,,24,,,,400,400,8.00,float square,19,https://doi.org/10.1016/j.conbuildmat.2019.07.264,
+18,float,ring on ring,67.10,,,25,,,,400,400,10.00,float square,19,https://doi.org/10.1016/j.conbuildmat.2019.07.264,
+18,float,ring on ring,65.17,,,27,,,,400,400,6.00,float square,20,https://doi.org/10.1016/j.conbuildmat.2019.07.264,
+18,float,ring on ring,53.47,,,19,,,,400,400,8.00,float square,19,https://doi.org/10.1016/j.conbuildmat.2019.07.264,
+18,float,ring on ring,44.85,,,22,,,,400,400,10.00,float square,19,https://doi.org/10.1016/j.conbuildmat.2019.07.264,
+19,soda-lime,4pt bend,40.00,,,,,,,150,20,3.00,dog bone,5,GCC Paper,"3D printed, 0 layer angle"
+19,soda-lime,4pt bend,56.00,,,,,,,150,20,3.00,dog bone,5,GCC Paper,"3D printed, 90 layer angle"
+19,soda-lime,4pt bend,39.00,,,,,,,150,20,3.00,dog bone,5,GCC Paper,"3D printed, 45 layer angle"
+19,soda-lime,4pt bend,73.50,,,,,,,130,,3.50,round bar,32,GCC Paper,
+20,soda-lime,3pt bend,41.00,,,,,,,69.9,13.1,8.50,3d printed segment,2,https://doi.org/10.1089/3dp.2018.0157,annealed
+20,soda-lime,3pt bend,41.00,,,,,,,79.4,13.7,9.00,3d printed segment,2,https://doi.org/10.1089/3dp.2018.0157,tempered
+21,soda-lime,3pt bend,41.00,,,,,,,100,13,9.00,3d printed segment,4,https://www.ingentaconnect.com/content/iass/piass/2018/00002018/00000008/art00010#expand/collapse,
+22,soda-lime,4pt bend,218.92,,29.10135793,,,,88.03,146,,1.63,round bar,8,present work,
+22,soda-lime,4pt bend,126.71,,14.23943744,,,,45.05,185,,3.96,round bar,11,present work,
+22,soda-lime,4pt bend,133.47,,27.81452307,,,,40.27,185,,5.25,round bar,10,present work,
+22,soda-lime,4pt bend,77.15,,11.75472055,,,,17.21,185,,16.13,round bar,4,present work,
+22,soda-lime,4pt bend,69.22,,,,,,11.61,146,,20.04,round bar,1,present work,
+22,soda-lime,4pt bend,74.62,,,,,,7.01,146,,23.95,round bar,1,present work,
+22,soda-lime,4pt bend,59.57,,21.49376011,,,,11.15,185,,24.23,round bar,4,present work,
+22,soda-lime,4pt bend,89.27,,,,,,11.86,146,,29.45,round bar,1,present work,
+22,soda-lime,4pt bend,66.10,,,,,,8.57,146,,33.38,round bar,1,present work,
