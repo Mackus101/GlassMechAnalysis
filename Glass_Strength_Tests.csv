@@ -17,8 +17,8 @@ paper_ID,material,test_procedure,mean_fracture_stress,median_fracture_stress,SD_
 4,float,ring on ring,,144.00,,,,7.3,,25,,3.95,circular disk,,https://doi.org/10.1016/0022-3093(95)00565-X,"Not sure if ring on ring or something similar, length is diameter"
 5,soda-lime,3pt bend,105.50,,3.50,,,,,9,,4.50,semi-circle,5,https://doi.org/10.1016/j.conbuildmat.2023.131708,Length is diameter
 5,soda-lime,3pt bend,83.80,,6.80,,,,,18,,4.50,semi-circle,5,https://doi.org/10.1016/j.conbuildmat.2023.131708,Length is diameter
-5,soda-lime,brazilian disk,118.80,,,,,5.42,,9,,4.50,brazillian disk,12,https://doi.org/10.1016/j.conbuildmat.2023.131708,"20 deg. Loading angle, length is diameter"
-5,soda-lime,brazilian disk,84.70,,,,,4.43,,18,,4.50,brazillian disk,18,https://doi.org/10.1016/j.conbuildmat.2023.131708,"20 deg. Loading angle, length is diameter"
+5,soda-lime,Brazilian disc,118.80,,,,,5.42,,9,,4.50,Brazilian disc,12,https://doi.org/10.1016/j.conbuildmat.2023.131708,"20 deg. Loading angle, length is diameter"
+5,soda-lime,Brazilian disc,84.70,,,,,4.43,,18,,4.50,Brazilian disc,18,https://doi.org/10.1016/j.conbuildmat.2023.131708,"20 deg. Loading angle, length is diameter"
 6,float,ring on ring,80.16,,10.65,,,,,400,400,6.00,float square,20,https://doi.org/10.1016/j.engfracmech.2024.109964,annealed
 6,float,ring on ring,235.39,,29.33,,,,,400,400,6.00,float square,20,https://doi.org/10.1016/j.engfracmech.2024.109964,fully tempered
 6,float,ring on ring,90.88,,14.03,,,,,400,400,6.00,float square,20,https://doi.org/10.1016/j.engfracmech.2024.109964,annealed faster load
@@ -124,12 +124,12 @@ paper_ID,material,test_procedure,mean_fracture_stress,median_fracture_stress,SD_
 20,soda-lime,3pt bend,41.00,,,,,,,69.9,13.1,8.50,3d printed segment,2,https://doi.org/10.1089/3dp.2018.0157,annealed
 20,soda-lime,3pt bend,41.00,,,,,,,79.4,13.7,9.00,3d printed segment,2,https://doi.org/10.1089/3dp.2018.0157,tempered
 21,soda-lime,3pt bend,41.00,,,,,,,100,13,9.00,3d printed segment,4,https://www.ingentaconnect.com/content/iass/piass/2018/00002018/00000008/art00010#expand/collapse,
-22,soda-lime,4pt bend,218.92,,29.10135793,,,,88.03,146,,1.63,round bar,8,present work,
-22,soda-lime,4pt bend,126.71,,14.23943744,,,,45.05,185,,3.96,round bar,11,present work,
-22,soda-lime,4pt bend,133.47,,27.81452307,,,,40.27,185,,5.25,round bar,10,present work,
-22,soda-lime,4pt bend,77.15,,11.75472055,,,,17.21,185,,16.13,round bar,4,present work,
-22,soda-lime,4pt bend,69.22,,,,,,11.61,146,,20.04,round bar,1,present work,
-22,soda-lime,4pt bend,74.62,,,,,,7.01,146,,23.95,round bar,1,present work,
-22,soda-lime,4pt bend,59.57,,21.49376011,,,,11.15,185,,24.23,round bar,4,present work,
-22,soda-lime,4pt bend,89.27,,,,,,11.86,146,,29.45,round bar,1,present work,
-22,soda-lime,4pt bend,66.10,,,,,,8.57,146,,33.38,round bar,1,present work,
+22,soda-lime,4pt bend - present work,218.92,,29.10135793,,,,88.03,146,,1.63,round bar,8,present work,
+22,soda-lime,4pt bend - present work,126.71,,14.23943744,,,,45.05,185,,3.96,round bar,11,present work,
+22,soda-lime,4pt bend - present work,133.47,,27.81452307,,,,40.27,185,,5.25,round bar,10,present work,
+22,soda-lime,4pt bend - present work,77.15,,11.75472055,,,,17.21,185,,16.13,round bar,4,present work,
+22,soda-lime,4pt bend - present work,69.22,,,,,,11.61,146,,20.04,round bar,1,present work,
+22,soda-lime,4pt bend - present work,74.62,,,,,,7.01,146,,23.95,round bar,1,present work,
+22,soda-lime,4pt bend - present work,59.57,,21.49376011,,,,11.15,185,,24.23,round bar,4,present work,
+22,soda-lime,4pt bend - present work,89.27,,,,,,11.86,146,,29.45,round bar,1,present work,
+22,soda-lime,4pt bend - present work,66.10,,,,,,8.57,146,,33.38,round bar,1,present work,

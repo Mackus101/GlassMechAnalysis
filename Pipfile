@@ -10,6 +10,7 @@ matplotlib = "*"
 seaborn = "*"
 numpy = "*"
 openpyxl = "*"
+shapely = "*"
 
 [dev-packages]
 ipykernel = "*"
