@@ -133,3 +133,6 @@ paper_ID,material,test_procedure,mean_fracture_stress,median_fracture_stress,SD_
 22,soda-lime,4pt bend - present work,59.57,,21.49376011,,,,11.15,185,,24.23,round bar,4,present work,
 22,soda-lime,4pt bend - present work,89.27,,,,,,11.86,146,,29.45,round bar,1,present work,
 22,soda-lime,4pt bend - present work,66.10,,,,,,8.57,146,,33.38,round bar,1,present work,
+23,soda-lime,3pt bend,90.11,84.98,,51,,,,185,50,8.00,float rectangle,4,https://journalamme.org/gicid/01.3001.0012.2827,
+23,soda-lime,3pt bend,51.95,52.61,,22,,,,185,50,8.00,float rectangle,4,https://journalamme.org/gicid/01.3001.0012.2827,
+23,soda-lime,3pt bend,121.60,121.03,,34,,,,185,45,8.00,float rectangle,4,https://journalamme.org/gicid/01.3001.0012.2827,
