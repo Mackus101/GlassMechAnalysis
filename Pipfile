@@ -11,6 +11,7 @@ seaborn = "*"
 numpy = "*"
 openpyxl = "*"
 shapely = "*"
+scikit-learn = "*"
 
 [dev-packages]
 ipykernel = "*"
