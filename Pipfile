@@ -12,6 +12,7 @@ numpy = "*"
 openpyxl = "*"
 shapely = "*"
 scikit-learn = "*"
+piecewise-regression = "*"
 
 [dev-packages]
 ipykernel = "*"
